@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 /* 
-    Link professor: https://professorguanabara.github.io/projeto-login/
-
     Paleta de cores:
     Verde: #49a09d
     Lilás: #5f2c82
@@ -90,6 +88,11 @@ div#formulario p {
     border: none;
 }
 
+.forms input:active,
+.forms input:focus {
+    background-color: white;
+}
+
 .forms label {
     display: none;
 }
@@ -131,6 +134,10 @@ div#formulario p {
     text-align: center;
     text-decoration: none;
     justify-content: center;
+}
+
+.button:hover {
+    background-color: #86e2df;
 }
 
 .button .material-symbols-outlined {
