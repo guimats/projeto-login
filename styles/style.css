@@ -5,3 +5,88 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+:root {
+    --lilas-color: #5f2c82;
+    --green-color: #49a09d;
+    --lighter-green-color: #7fc2c0;
+    --small-font-size: 12.5px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lilas-color);
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 515px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+div#imagem {
+    border-radius: 20px 20px 0 0;
+    width: 250px;
+    height: 200px;
+    background: url(../img/metal.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+
+div#formulario {
+    padding: 10px;
+    height: 298px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+div#formulario p {
+    margin-top: 15px;
+    font-size: var(--small-font-size);
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.forms {
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: var(--lilas-color);
+    border-radius: 8px;
+    border: 2px solid #5f2c82;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 34px;
+    height: 40px;
+}
+
+.forms input {
+    font-size: 1em;
+    padding: 0 5px;
+    height: 100%;
+    width: calc(100% - 45px);
+    transform: translateY(-10px);
+    border-radius: 8px;
+    background-color: var(--lighter-green-color);
+}
