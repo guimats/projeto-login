@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-:root {
-    --lilas-color: #5f2c82;
-    --green-color: #49a09d;
-    --lighter-green-color: #94cfcd;
-    --small-font-size: 0.8em;
-}
-
 /* Tamanho médio configs */
 
 body {
@@ -30,7 +23,6 @@ div#formulario p {
 div#imagem {
     display: block;
     float: right;
-    border-radius: 0 20px 20px 0;
     width: 50%;
     height: 100%;
 }

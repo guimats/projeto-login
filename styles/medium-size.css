@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-:root {
-    --lilas-color: #5f2c82;
-    --green-color: #49a09d;
-    --lighter-green-color: #94cfcd;
-    --small-font-size: 0.8em;
-}
-
 /* Tamanho médio configs */
 
 body {
@@ -21,7 +14,6 @@ section#login {
 div#imagem {
     display: block;
     float: left;
-    border-radius: 20px 0 0 20px;
     width: 30%;
     height: 100%;
 }
