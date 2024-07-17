@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 /* 
+    Link professor: https://professorguanabara.github.io/projeto-login/
+
     Paleta de cores:
     Verde: #49a09d
     Lilás: #5f2c82
@@ -9,12 +11,12 @@
 :root {
     --lilas-color: #5f2c82;
     --green-color: #49a09d;
-    --lighter-green-color: #7fc2c0;
-    --small-font-size: 12.5px;
+    --lighter-green-color: #94cfcd;
+    --small-font-size: 0.8em;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -38,6 +40,9 @@ section#login {
     height: 515px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
@@ -55,13 +60,12 @@ div#formulario {
 
 div#formulario h1 {
     text-align: center;
-    margin: 5px;
 }
 
 div#formulario p {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: var(--small-font-size);
-    line-height: 1.4em;
+    line-height: 1.3em;
     text-align: left;
 }
 
@@ -75,18 +79,60 @@ div#formulario p {
     border: 2px solid #5f2c82;
 }
 
-.material-symbols-outlined {
-    color: white;
-    font-size: 34px;
-    height: 40px;
-}
-
 .forms input {
     font-size: 1em;
     padding: 0 5px;
     height: 100%;
-    width: calc(100% - 45px);
-    transform: translateY(-10px);
+    width: calc(100% - 40px);
+    transform: translateY(-7px);
     border-radius: 8px;
     background-color: var(--lighter-green-color);
+    border: none;
+}
+
+.forms label {
+    display: none;
+}
+
+.forms .material-symbols-outlined {
+    color: white;
+    font-size: 32px;
+    height: 40px;
+    padding: 0 1px;
+}
+
+.login-button {
+    background-color: #53aaa7;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background-color: #356d6b;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding-top: 5px;
+
+    border: 1px solid #53aaa7;
+    border-radius: 5px;
+    color: #356d6b;
+
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.button .material-symbols-outlined {
+    font-size: 15px;
 }
