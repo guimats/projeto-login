@@ -33,7 +33,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 515px;
 
@@ -44,6 +43,7 @@ section#login {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 div#imagem {
@@ -76,18 +76,23 @@ div#formulario p {
     margin: 5px 0;
     background-color: var(--lilas-color);
     border-radius: 8px;
-    border: 2px solid #5f2c82;
+    border: 2px solid var(--lilas-color);
 }
 
 .forms input {
     font-size: 1em;
-    padding: 0 5px;
+    padding: 4px;
     height: 100%;
-    width: calc(100% - 40px);
-    transform: translateY(-7px);
+    width: calc(100% - 45px);
     border-radius: 8px;
     background-color: var(--lighter-green-color);
-    border: none;
+    border: 0px;
+    outline: none;
+    transform: translateY(-12px);
+}
+
+.forms label {
+    display: none;
 }
 
 .forms input:active,
@@ -95,15 +100,12 @@ div#formulario p {
     background-color: white;
 }
 
-.forms label {
-    display: none;
-}
-
 .forms .material-symbols-outlined {
     color: white;
-    font-size: 32px;
+    font-size: 2em;
     height: 40px;
-    padding: 0 1px;
+    width: 40px;
+    padding: 5px;
 }
 
 .login-button {
@@ -143,5 +145,5 @@ div#formulario p {
 }
 
 .button .material-symbols-outlined {
-    font-size: 15px;
+    font-size: 0.8em;
 }
