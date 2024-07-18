@@ -26,13 +26,12 @@ body {
 
 main {
     height: 100vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 250px;
     height: 515px;
 
@@ -43,7 +42,6 @@ section#login {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
 
 div#imagem {

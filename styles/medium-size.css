@@ -9,18 +9,16 @@ body {
 section#login {
     width: 80%;
     height: 280px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 div#imagem {
-    display: block;
-    float: left;
     width: 30%;
     height: 100%;
 }
 
 div#formulario {
-    display: block;
-    float: right;
     padding: 10px;
     height: 100%;
     width: 70%;
